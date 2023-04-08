@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Dashboard</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  </head>
+
+  <body>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"></script>
+    <script src="../FileUpload.js" type="module"></script>
+    <div class="navbar">
+      <span id="logo">Document Verification Portal</span>
+      <a href="../../public/index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="docs.html">Docs</a>
+      <a href="login.html">Login</a>
+    </div>
+
+    <div class="main">
+      <h1>Dashboard</h1>
+      <h2>Successfully Logged In!</h2>
+      <h2 id="account"></h2>
+      <br />
+      <span id="button_flex">
+        <a href="upload.html"><button>Upload</button></a>
+      </span>
+        <span id="button_flex">
+        <a href="view.html"><button>View</button></a>
+      </span>
+      <span id="button_flex">
+        <a href="./share.html"><button>Share</button></a>
+      
+        <!-- <button id="button_status">Status</button></a> -->
+      </span>
+      <span id="button_flex">
+        <a href="../../public/index.html"><button>Logout</button></a>
+      </span>
+    </div>
+
+    <div class="footer">
+      <p id="power">Copyright Hacktivision</p>
+      <span id="power">Powered by Electrothon 5.0.</span>
+    </div>
+    <!-- <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> -->
+  </body>
+</html>
