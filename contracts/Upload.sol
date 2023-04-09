@@ -82,4 +82,50 @@ contract Upload
         return value[_user];
     }
 
+    function shareAccess() public view returns(Access[] memory)
+    {
+        return accessList[msg.sender];
+    }
+
+    function sendrequest(address _admin) public {
+        //0 means the request is pending currently
+        for(uint i=0;i<value[msg.sender].length;i++)
+        {
+            bool check=false;
+            for(uint j=0;j<requests[msg.sender].length;j++)
+            {
+                string memory c=string(requests[msg.sender][j].url);
+                if(compareStrings(c, value[msg.sender][i]))
+                {
+                        check=true;
+                        break;
+                }
+            }
+            if(check==false)
+                requests[msg.sender].push(Share(msg.sender,value[msg.sender][i],i,0));
+        } 
+        //add the address of the user to addreq
+        addreq.push(msg.sender);
+        //send the request to the admin for approval
+        allow(_admin);
+    }
     
+    //to the user
+    function showstatus() public view returns(Share[] memory) {
+        return requests[msg.sender];
+    }
+
+    function checkstatusadmin(address _user) public view returns(Share[] memory) {
+        return requests[_user];
+    }
+
+    //only accessible by admin
+    function approverequest(address _user,uint index) public {
+        requests[_user][index].status=1;
+    }
+
+    //2 means disapproved by admin
+    function disapproverequest(address _user,uint index) public {
+        requests[_user][index].status=2;
+    }
+}
