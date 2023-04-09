@@ -3,43 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Upload</title>
+    <title>Dashboard</title>
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-    <!-- <script type="module" src="/store.js"></script> -->
     <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
         type="application/javascript"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>   <!-- <script src="../App.js" type="module"></script> -->
-    <script src="../store.js" type="module"></script>
+    <script src="../validate.js" type="module"></script>
+
   </head>
 
   <body>
-    
-
     <div class="navbar">
       <span id="logo">Document Verification Portal</span>
       <a href="../../public/index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="docs.html" id="active">Docs</a>
+      <a href="docs.html">Docs</a>
       <a href="login.html">Login</a>
     </div>
 
     <div class="main">
-      <h1>Upload A File</h1>
-      <h2>Add a new file over Web3 Storage.</h2>
+
+      <!-- <span>
+        <button id="heading_button">Document Link</button>
+
+        <button id="heading_button">Verification Status</button>
+      </span> -->
+      <h1>Verify A File</h1>
+      <h2>Enter User's id</h2>
       <br />
-      <form id="form">
-        <input type="file" name="file" id="file-upload" />
-        <button type="button" id="submit">Upload</button>
+      <form>
+        <label>Enter Account address: </label>
+        <input type="text" id="address" />
+        <button type="button" id="submit">Check</button>
       </form>
       <br />
-      <!-- <h4><b>Note: </b>After a successful upload, please note down your file <b>CID</b> inorder to retrieve it.</h4> -->
+      <table id="tables">
+        
+      </table>
     </div>
 
     <div class="footer">
       <p id="power">Copyright Hacktivision</p>
-      <span id="power">Powered by Electrothon 5.0</span>
+      <span id="power">Powered by Electrothon 5.0.</span>
     </div>
-    <!-- <script src="../stores.js" charset="utf-8" type="module"></script> -->
+    <!-- <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> -->
   </body>
 </html>
