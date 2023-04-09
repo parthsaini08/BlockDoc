@@ -1,54 +1,35 @@
 # BlockDoc: Document Verification and Sharing system
 
-Simple overview of use/purpose.
+
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+The project provides a portal for document peer-to-peer document sharing and for verification via an admin as well.
+ The project is based on Solidity, IPFS, HTML, CSS, Tailwind CSS, and Bootstrap.
 
 ## Getting Started
+- One needs to make an account on Metamask.
+- Install hardhat and deploy the smart contract as available in project files.
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+- check package.json
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+npm install hardhat
 
-### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+npx hardhat node
 
-## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+npx hardhat run --network localhost scripts/deploy.js.
+
+Launch in VS code.
+
 
 ## Authors
 
-Contributors names and contact info
+Parth Saini and Samriddh Singh
 
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
 
