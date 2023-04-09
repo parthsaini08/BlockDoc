@@ -1,4 +1,4 @@
-# BlockDoc: Document Verification and Sharing system
+# BlockDoc: BlockChain based Document Verification and Sharing system
 
 
 
