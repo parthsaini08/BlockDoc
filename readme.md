@@ -31,7 +31,10 @@ npx hardhat run --network localhost scripts/deploy.js.
 
 Launch in VS code.
 
-
+##Challenges we ran into:
+- We were not familiar with the Blockchain technology at first, so the major challenge was in learned the technology in order to complete our project.
+- One of the major challenge we faced was using Metamask, a Ethereum wallet for the transactions. It gives a error if the number of transactions within a specified time limit are exceeded.
+- Also, we faced issue in deploying our smart contract.
 ## Authors
 
 Parth Saini and Samriddh Singh
