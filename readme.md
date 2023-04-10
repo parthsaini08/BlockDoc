@@ -40,3 +40,14 @@ Launch in VS code.
 Parth Saini and Samriddh Singh
 
 
+The project utilities are self explanatory, can be seen here:
+
+![dashboard](dashboard.jpg)
+![Share](share.jpg)
+![Upload](upld.jpg)
+![View](login.jpg)
+![View](view.jpg)
+
+
+
+
